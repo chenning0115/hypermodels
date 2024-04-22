@@ -1,0 +1,34 @@
+{
+    "data": {
+        "data_sign": "Indian",
+        "data_file": "Indian_10",
+        "diffusion_sign": false,
+        "diffusion_data_sign_path_prefix": "/home/cn/codes/spectral_diff_temp/codes/save_feature/indian_unet3d_patch16_without_downsample_kernal5_fix/save_feature",
+        "diffusion_data_sign": "t5_2_full.pkl.npy",
+        "patch_size": 13,
+        "test_ratio": 0.95,
+        "batch_size": 65,
+        "num_classes": 16,
+        "pca": 200,
+        "dim_heads": 64,
+        "spectral_size": 200,
+        "random_rotate": true
+    },
+    "net": {
+        "trainer": "cross_trainer",
+        "net_type": "just_pixel",
+        "mlp_head_dim": 64,
+        "depth": 3,
+        "dim": 64,
+        "heads": 20,
+        "kernal": 5,
+        "padding": 2
+    },
+    "train": {
+        "epochs": 50,
+        "lr": 0.001,
+        "weight_decay": 0,
+        "temp": 20
+    },
+    "uniq_name": "Indian_test"
+}

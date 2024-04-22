@@ -1,0 +1,30 @@
+{
+    "data": {
+        "data_sign": "WH",
+        "data_file": "WH_10",
+        "dump": false,
+        "diffusion_sign": false,
+        "patch_size": 21,
+        "test_ratio": 0.95,
+        "batch_size": 32,
+        "num_classes": 22,
+        "pca": 30,
+        "dim_heads": 64,
+        "spectral_size": 30,
+        "random_rotate": true
+    },
+    "net": {
+        "trainer": "cross_trainer",
+        "net_type": "just_pixel",
+        "mlp_head_dim": 64,
+        "depth": 2,
+        "dim": 64,
+        "heads": 20
+    },
+    "train": {
+        "epochs": 60,
+        "lr": 0.001,
+        "weight_decay": 0,
+        "temp": 20
+    }
+}
